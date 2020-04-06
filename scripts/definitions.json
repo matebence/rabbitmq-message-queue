@@ -1,0 +1,30 @@
+{
+ "rabbit_version": "3.8.3",
+ "users": [
+  {
+   "name": "auth_user",
+   "password_hash": "GdQdAVwzi5oqexLrhR5ExWj0Jqip7CJGXWUX8X29IbljCerE",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": "administrator"
+  }
+ ],
+ "vhosts": [
+  {
+   "name": "\/authorization"
+  }
+ ],
+ "permissions": [
+  {
+   "user": "auth_user",
+   "vhost": "\/authorization",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  }
+ ],
+ "parameters": [],
+ "policies": [],
+ "queues": [],
+ "exchanges": [],
+ "bindings": []
+}
