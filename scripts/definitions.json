@@ -6,17 +6,33 @@
    "password_hash": "GdQdAVwzi5oqexLrhR5ExWj0Jqip7CJGXWUX8X29IbljCerE",
    "hashing_algorithm": "rabbit_password_hashing_sha256",
    "tags": "administrator"
+  },
+  {
+   "name": "track_user",
+   "password_hash": "2gULh8QzpEE9zzOnJKubveJK+yVRt9ok5sKKff+EMDZZBwR+",
+   "hashing_algorithm": "rabbit_password_hashing_sha256",
+   "tags": "administrator"
   }
  ],
  "vhosts": [
   {
    "name": "\/authorization"
+  },
+  {
+   "name": "\/tracking"
   }
  ],
  "permissions": [
   {
    "user": "auth_user",
    "vhost": "\/authorization",
+   "configure": ".*",
+   "write": ".*",
+   "read": ".*"
+  },
+  {
+   "user": "track_user",
+   "vhost": "\/tracking",
    "configure": ".*",
    "write": ".*",
    "read": ".*"
