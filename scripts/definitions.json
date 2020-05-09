@@ -2,37 +2,21 @@
  "rabbit_version": "3.8.3",
  "users": [
   {
-   "name": "auth_user",
-   "password_hash": "GdQdAVwzi5oqexLrhR5ExWj0Jqip7CJGXWUX8X29IbljCerE",
-   "hashing_algorithm": "rabbit_password_hashing_sha256",
-   "tags": "administrator"
-  },
-  {
-   "name": "track_user",
-   "password_hash": "I5wlDGnawpH9ue1+BotorvyzrHRzSfo922NHSSc0PNqQBQCe",
+   "name": "app_user",
+   "password_hash": "dWkbj5cqy9FUehvq4U+eZM5Jg4LY5q0GXjum/vJoyDm94K5a",
    "hashing_algorithm": "rabbit_password_hashing_sha256",
    "tags": "administrator"
   }
  ],
  "vhosts": [
   {
-   "name": "\/authorization"
-  },
-  {
-   "name": "\/tracking"
+   "name": "\/messaging"
   }
  ],
  "permissions": [
   {
-   "user": "auth_user",
-   "vhost": "\/authorization",
-   "configure": ".*",
-   "write": ".*",
-   "read": ".*"
-  },
-  {
-   "user": "track_user",
-   "vhost": "\/tracking",
+   "user": "app_user",
+   "vhost": "\/messaging",
    "configure": ".*",
    "write": ".*",
    "read": ".*"
