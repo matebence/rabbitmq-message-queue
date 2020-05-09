@@ -9,7 +9,7 @@
   },
   {
    "name": "track_user",
-   "password_hash": "2gULh8QzpEE9zzOnJKubveJK+yVRt9ok5sKKff+EMDZZBwR+",
+   "password_hash": "I5wlDGnawpH9ue1+BotorvyzrHRzSfo922NHSSc0PNqQBQCe",
    "hashing_algorithm": "rabbit_password_hashing_sha256",
    "tags": "administrator"
   }
